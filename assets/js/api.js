@@ -1,5 +1,7 @@
 const API =
-  "https:gateway.marvel.com/v1/public/events?ts=1&apikey=0477406f4b93a56ee475160779a44050&hash=ba047e3cb226526b9ed3d6a1bae70cf0";
+  "https:gateway.marvel.com/v1/public/events?ts=1&apikey=c3116255697a784abea5e64d9f008bd4&hash=7be75db4654a7d297cfa781b5951afbd";
+
+  // https:gateway.marvel.com/v1/public/events?ts=1&apikey=0477406f4b93a56ee475160779a44050&hash=ba047e3cb226526b9ed3d6a1bae70cf0
 
 const getAPI = (url) => {
   return fetch(url)
@@ -15,7 +17,6 @@ const getAPI = (url) => {
 const fillData = (data, copy) => {
   let html = "";
   data.forEach((ch) => {
-    console.log(ch.thumbnail.path + "." + ch.thumbnail.extension);
     html += `<div class="blog-card" data-image="">
               <img class="blog-card "  src="${ch.thumbnail.path}.${ch.thumbnail.extension}">
             <div class="card-info">
