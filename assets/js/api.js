@@ -1,5 +1,5 @@
 const API =
-  " https:gateway.marvel.com/v1/public/events?ts=1&apikey=0477406f4b93a56ee475160779a44050&hash=ba047e3cb226526b9ed3d6a1bae70cf0";
+  "https:gateway.marvel.com/v1/public/events?ts=1&apikey=0477406f4b93a56ee475160779a44050&hash=ba047e3cb226526b9ed3d6a1bae70cf0";
 
 
 const getAPI = (url) => {
